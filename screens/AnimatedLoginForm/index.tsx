@@ -9,15 +9,15 @@ const AnimatedLoginForm = () => {
   return (
     <View style={styles.container}>
       <View style={StyleSheet.absoluteFill}>
-        <Svg height={height} width={width}>
+        <Svg height={height / 2} width={width}>
           <Image
             href={require("../../assets/images/login-background.jpg")}
             width={width}
-            height={height / 2}
+            height={height}
             preserveAspectRatio="xMidYMid slice"
           />
         </Svg>
-        <View style={{ backgroundColor: "red" }}>
+        <View style={styles.closeButtonContainer}>
           <Text>X</Text>
         </View>
       </View>
