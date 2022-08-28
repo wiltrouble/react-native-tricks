@@ -57,6 +57,9 @@ const styles = StyleSheet.create({
   },
   formInputContainer: {
     marginBottom: 70,
+    ...StyleSheet.absoluteFill,
+    zIndex: -1,
+    justifyContent: 'center'
   },
   closeButtonContainer: {
     width: 40,
@@ -74,6 +77,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     borderRadius: 20,
+    top: -20
   }
   
 });
